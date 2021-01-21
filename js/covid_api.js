@@ -186,7 +186,7 @@
     // Download the data
     myConnector.getData = function(table, doneCallback) {
         $.getJSON("https://api.covidtracking.com/v1/states/daily.json", function(resp) {
-            var feat = resp.features,
+            var feat = resp,
                 tableData = [];
 
             // Iterate over the JSON object
