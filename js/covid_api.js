@@ -6,10 +6,10 @@
     myConnector.getSchema = function(schemaCallback) {
         var cols = [{
             id: "date",
-            dataType: tableau.dataTypeEnum.date
+            dataType: tableau.dataTypeEnum.string
         }, {
             id: "state",
-            dataType: tableau.dataTypeEnum.geometry
+            dataType: tableau.dataTypeEnum.string
         }, {
             id: "positive",
             dataType: tableau.dataTypeEnum.float
@@ -114,9 +114,6 @@
             dataType: tableau.dataTypeEnum.float
         }, {
             id: "totalTestsPeopleAntigen",
-            dataType: tableau.dataTypeEnum.float
-        }, {
-            id: "Positive",
             dataType: tableau.dataTypeEnum.float
         }, {
             id: "positiveTestsPeopleAntigen",
